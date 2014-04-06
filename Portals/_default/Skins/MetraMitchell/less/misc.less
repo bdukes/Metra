@@ -1,0 +1,110 @@
+/// <reference path="variables.less" />
+/// <reference path="mixins.less" />
+
+.dnn_mact li.actionMenuMove ul li{height:auto;} //Overrides fixed height on li for moving module in action menu (Bootstrap3 conflict)
+
+#ControlBar_ControlPanel {
+    &, * {
+        &:before, &:after, & {.box-sizing-override;}
+    }
+}// Overrides Bootstrap 3 conflict with ControlBar styles
+
+.console-large img {.box-sizing-override;} // Overrides Bootstrap conflict with Admin Page Icons
+
+.fnlForm .RadEditor{width: 100% !important;} // Forms & List Editor width override
+
+.metra{
+//--------------------  Misc Styles -------------------- 
+    .clear{clear:both;}
+
+    // DNN Specific Overrides
+    .dnnEditState & .DnnModule{opacity:1;} // Overrides DNN Edit Mode opacity on all modules
+    .row .DNNEmptyPane{display:none;} // Overrides DNN Edit Mode opacity on all modules
+    .DNNEmptyPane.dnnSortable{min-height:0 !important;} // Overrides Minheight for draggable panes when in edit mode
+    .dnnViewSource textarea, .dnnSQLModule textarea, .ssStylesheetEditor textarea, .dnnAdvancedSettings textarea[name$=PageHeadText] {font-family: Consolas, Inconsolata, monospace;}
+
+    //Style Guide Special Styles (makes style guide page content layouts look nice)
+    .sg-wrap{border-bottom: 1px solid #F3F3F3; padding: 1em 0;
+        .summary{}
+        .content{
+            .swatch-row span{display: block; float: left; height: 50px; width: 50px;
+                &:nth-child(1) {width:100px; margin-right:.5em; .box-shadow (0px 3px 3px 0 #999);}
+            }
+        }
+
+        &.bcolor{
+            .swatch-row span{
+                &:nth-child(1) {background-color:@primary-color; height:50px;}
+            }
+            .swatch-row-one span{
+                &:nth-child(2) {background-color:@primary-color-darkest;}
+                &:nth-child(3) {background-color:@primary-color-darker;}
+                &:nth-child(4) {background-color:@primary-color-dark;}
+                &:nth-child(5) {background-color:@primary-color-tinydark;}
+            }    
+            .swatch-row-two span{
+                &:nth-child(2) {background-color:@primary-color-tinylight;}
+                &:nth-child(3) {background-color:@primary-color-light;}         
+                &:nth-child(4) {background-color:@primary-color-lighter;} 
+                &:nth-child(5) {background-color:@primary-color-lightest;}
+            }   
+        }
+        &.bcolor-secondary{
+            .swatch-row span{
+                &:nth-child(1) {background-color:@secondary-color; height:50px;}
+            }
+            .swatch-row-one span{
+                &:nth-child(2) {background-color:@secondary-color-darker;}
+                &:nth-child(3) {background-color:@secondary-color-dark;}
+                
+            }    
+            .swatch-row-two span{
+                &:nth-child(2) {background-color:@secondary-color-light;}
+                &:nth-child(3) {background-color:@secondary-color-lighter;}         
+                
+            }   
+        }
+        &.bcolor-accent{
+            .swatch-row span{
+                &:nth-child(1) {background-color:@accent-color; height:50px;}
+            }
+            .swatch-row-one span{
+                &:nth-child(2) {background-color:@accent-color-darker;}
+                &:nth-child(3) {background-color:@accent-color-dark;}
+                
+            }    
+            .swatch-row-two span{
+                &:nth-child(2) {background-color:@accent-color-light;}
+                &:nth-child(3) {background-color:@accent-color-lighter;}         
+                
+            }   
+        }
+        &.bcolor-accent2{
+            .swatch-row span{
+                &:nth-child(1) {background-color:@accent-color2; height:100px;}
+            }
+        }
+        &.bcolor-accent3{
+            .swatch-row span{
+                &:nth-child(1) {background-color:@accent-color3; height:100px;}
+            }
+        }
+
+    }
+    .sg-navlist{
+        li{list-style:none; font-size:1.231em; padding:.25em 0;}
+    }
+
+    .carousel-inner > .active.left {float:none;} //Fix image height "bounce" during slide animation
+    .carousel-inner .item img{width:100%;} // this stretches the image to fill its container if the image is smaller than the container. stretching images is bad, but sometimes you may want this.
+
+    .row.style-guide-wrap{position:relative;
+        .col-md-3{
+            ul{background:@accent-color2;  border:solid 2px #fff; padding:15px; margin:15px 0; border-radius:0;
+               > li > a:hover, > li > a:focus{background-color:@secondary-color-dark; }
+            }
+        }
+        .affix{top:20px;}
+    }
+}
+

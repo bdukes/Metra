@@ -1,0 +1,78 @@
+@using DotNetNuke.Web.DDRMenu;
+@using System.Dynamic;
+@using System.Collections.Generic;
+@using Globals=DotNetNuke.Common.Globals;
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@functions {
+    static IEnumerable<T> Prepend<T>(IEnumerable<T> sequence, T additionalItem) {
+        yield return additionalItem;
+        foreach (T item in sequence) { yield return item; }
+    } 
+}
+
+@helper RenderNodes(IEnumerable<MenuNode> nodes, int level, string parentTabPath, MenuNode parentNode)
+{
+    if (nodes.Any())
+    {
+        var ulClasses = "";
+        var topLevelId = level == 0 ? " id=" + Model.ControlID : string.Empty;
+        if (level > 0) { ulClasses = "dropdown-menu"; }
+        if (level > 1) { ulClasses = "dropdown-submenu"; }
+        if (level == 0) { ulClasses = "nav navbar-nav "; }
+
+        <ul @topLevelId class="@ulClasses">
+        @{
+        if (parentNode != null) { nodes = Prepend(nodes, parentNode); }
+        foreach (var node in nodes)
+        {
+            var tabPath = parentTabPath;
+            tabPath += Globals.CreateValidClass(node.Text.ToLowerInvariant(), true);
+            var isParent = node == parentNode;
+            var cssClasses = new List<string> { tabPath, };
+            if (!isParent && node.HasChildren()) { cssClasses.Add("dropdown"); }
+            if (node.Selected) { cssClasses.Add("active"); }
+            if (isParent) { cssClasses.Add("parent"); }
+            var classes = new HtmlString((cssClasses.Count == 0) ? "" : (" class=\"" + string.Join(" ", cssClasses) + "\""));
+
+            <li @classes>
+                @if (node.HasChildren() && !isParent)
+                {
+                    if (level == 0)
+                    {
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">@node.Text <b class="caret"></b><span class="swipe-nav-next glyphicon glyphicon-chevron-right"></span></a>
+                    }
+                    else
+                    {
+                        <a href="#" target="@node.Target">@node.Text<span class="swipe-nav-next glyphicon glyphicon-chevron-right"></span></a>
+                    }
+                    
+                    @RenderNodes(node.Children, level + 1, tabPath + '-', level == 0 ? node : null)
+                }
+                else if (node.Enabled)
+                {
+                    <a href="@node.Url" target="@node.Target">@node.Text</a>
+                }
+                else
+                {
+                    @node.Text
+                }
+            </li>
+        }
+        }
+        </ul>
+    }
+}
+
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle swipe-menu-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+
+<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse swipe-menu" data-swipe-back-class="glyphicon-chevron-left" data-swipe-back-text="Back">
+    @RenderNodes(Model.Source.root.Children, 0, "pagepath-", null)
+</div>

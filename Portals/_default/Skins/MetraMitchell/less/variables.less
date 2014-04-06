@@ -1,0 +1,37 @@
+// Color Thresholds
+@color-threshold-tiny: 5%;
+@color-threshold-strong: 10%;
+@color-threshold-stronger: 20%;
+@color-threshold-strongest: 30%;
+
+//Colors
+@primary-color: #c60c30;
+    @primary-color-tinylight: lighten( @primary-color, @color-threshold-tiny );
+    @primary-color-light: lighten( @primary-color, @color-threshold-strong );
+    @primary-color-lighter: lighten( @primary-color, @color-threshold-stronger );
+    @primary-color-lightest: lighten( @primary-color, @color-threshold-strongest );
+    
+    @primary-color-tinydark: darken( @primary-color, @color-threshold-tiny );
+    @primary-color-dark: darken( @primary-color, @color-threshold-strong );
+    @primary-color-darker: darken( @primary-color, @color-threshold-stronger );
+    @primary-color-darkest: darken( @primary-color, @color-threshold-strongest );
+
+@secondary-color: #333;
+    @secondary-color-light: lighten( @secondary-color, @color-threshold-strong );
+    @secondary-color-lighter: lighten( @secondary-color, @color-threshold-stronger );
+    @secondary-color-dark: darken( @secondary-color, @color-threshold-strong );
+    @secondary-color-darker: darken( @secondary-color, @color-threshold-stronger );
+
+@accent-color: #555;
+    @accent-color-light: lighten( @accent-color, @color-threshold-strong );
+    @accent-color-lighter: lighten( @accent-color, @color-threshold-stronger );
+    @accent-color-dark: darken( @accent-color, @color-threshold-strong );
+    @accent-color-darker: darken( @accent-color, @color-threshold-stronger );
+
+@accent-color2: #f2f2f2;
+@accent-color3: #f8f8f8;
+
+//Fonts
+@site-font-sans: Arial, Helvetica, sans-serif;
+@site-font-serif: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+@site-font: 'Coustard', Times, Baskerville, Georgia, serif;

@@ -1,0 +1,88 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="" type="Skin" version="0.8.0">
+      <friendlyName>Metra Mitchell</friendlyName>
+      <description>Custom responsive skin for Metra Mitchell.</description>
+      <owner>
+        <name>Metra Mitchell</name>
+        <organization>aoverkamp design</organization>
+        <url>http://www.aoverkamp.com</url>
+        <email>aoverkamp@gmail.com</email>
+      </owner>
+      <releaseNotes />
+        <components>
+            <component type="ResourceFile">
+              <resourceFiles>
+                <basePath setFromNant="skinPath">Portals/_default/Skins/MetraMitchell</basePath>
+                <resourceFile>
+                  <name>SkinResources.zip</name>
+                </resourceFile>
+              </resourceFiles>
+            </component>
+            <component type="Skin">
+                <skinFiles>
+                    <skinName setFromNant="skinName">MetraMitchell</skinName>
+                </skinFiles>
+            </component>
+          <component type="Assembly">
+            <assemblies>
+              <!--assembly>
+                <name>Engage.CssSelector.dll</name>
+                <version></version>
+              </assembly-->
+            </assemblies>
+          </component>
+          <component type="Config">
+            <config>
+              <configFile>web.config</configFile>
+              <install>
+                <configuration>
+                  <nodes configfile="Web.config">
+                    <node path="/configuration/system.webServer" targetpath="/configuration/system.webServer/staticContent" action="update" collision="ignore">
+                      <staticContent>
+                      </staticContent>
+                    </node>
+                    <node path="/configuration/system.webServer/staticContent" action="update" key="fileExtension" collision="ignore">
+                      <remove fileExtension=".svg" />
+                      <mimeMap fileExtension=".svg" mimeType="image/svg+xml" />
+                      <remove fileExtension=".less" />
+                      <mimeMap fileExtension=".less" mimeType="text/css" />
+                    </node>
+                  </nodes>
+                </configuration>
+              </install>
+              <uninstall>
+                <nodes />
+              </uninstall>
+            </config>
+          </component>
+      </components>          
+    </package>
+    <package name="" type="Container" version="1.0.0">
+      <friendlyName>Metra Mitchell</friendlyName>
+      <description>Containers for Metra Mitchell skin</description>
+       <owner>
+        <name>Metra Mitchell</name>
+        <organization>aoverkamp design</organization>
+        <url>http://www.aoverkamp.com</url>
+        <email>aoverkamp@gmail.com</email>
+      </owner>
+      <releaseNotes />
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath setFromNant="containerPath">Portals/_default/Containers/Engage</basePath>
+            <resourceFile>
+              <name>ContainerResources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="Container">
+          <containerFiles>
+            <containerName setFromNant="skinName">Engage</containerName>
+          </containerFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

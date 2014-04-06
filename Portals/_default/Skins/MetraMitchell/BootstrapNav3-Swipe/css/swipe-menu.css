@@ -1,0 +1,331 @@
+@media (max-width: 767px) {
+  .swipe-menu.navbar-collapse.in {
+    /* Positioning for dropdowns when using mobile collapse*/
+  }
+  .swipe-menu.navbar-collapse.in .dropdown-menu {
+    position: relative;
+    float: none;
+  }
+  .swipe-menu.navbar-collapse.in .dropdown-submenu {
+    position: relative;
+  }
+  .swipe-menu.navbar-collapse.in .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+  }
+  .swipe-menu.navbar-collapse.in .dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    margin-right: -10px;
+  }
+  .swipe-menu.navbar-collapse.in .dropdown-submenu .pull-left {
+    float: none;
+  }
+  .swipe-menu.navbar-collapse.in .dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+  }
+  .swipe-menu.navbar-collapse.in .nav.navbar-nav .dropdown a,
+  .swipe-menu.navbar-collapse.collapsing .nav.navbar-nav .dropdown a,
+  .swipe-menu.navbar-collapse.in .nav.navbar-nav .dropdown-submenu a,
+  .swipe-menu.navbar-collapse.collapsing .nav.navbar-nav .dropdown-submenu a {
+    padding: 10px 5px 10px 15px;
+  }
+  .swipe-menu.navbar-collapse.in .nav.navbar-nav .dropdown .dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing .nav.navbar-nav .dropdown .dropdown-menu,
+  .swipe-menu.navbar-collapse.in .nav.navbar-nav .dropdown-submenu .dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing .nav.navbar-nav .dropdown-submenu .dropdown-menu {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+  .swipe-menu.navbar-collapse.in.in,
+  .swipe-menu.navbar-collapse.collapsing.in,
+  .swipe-menu.navbar-collapse.in.collapsing,
+  .swipe-menu.navbar-collapse.collapsing.collapsing {
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav li,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav li,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav li,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav li {
+    position: static;
+  }
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav li:first-of-type,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav li:first-of-type,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav li:first-of-type,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav li:first-of-type {
+    position: relative;
+  }
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav .dropdown-submenu .dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav .dropdown-submenu .dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav .dropdown-submenu .dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav .dropdown-submenu .dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav .dropdown .dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav .dropdown .dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav .dropdown .dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav .dropdown .dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav .dropdown-submenu .dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav .dropdown-submenu .dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav .dropdown-submenu .dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav .dropdown-submenu .dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .nav.navbar-nav .dropdown .dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .nav.navbar-nav .dropdown .dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .nav.navbar-nav .dropdown .dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .nav.navbar-nav .dropdown .dropdown-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
+  .swipe-menu.navbar-collapse.in.in .caret,
+  .swipe-menu.navbar-collapse.collapsing.in .caret,
+  .swipe-menu.navbar-collapse.in.collapsing .caret,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .caret {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid;
+    float: right;
+  }
+  .swipe-menu.navbar-collapse.in.in li.back a,
+  .swipe-menu.navbar-collapse.collapsing.in li.back a,
+  .swipe-menu.navbar-collapse.in.collapsing li.back a,
+  .swipe-menu.navbar-collapse.collapsing.collapsing li.back a {
+    color: #428bca;
+  }
+  .swipe-menu.navbar-collapse.in.in li.back .caret,
+  .swipe-menu.navbar-collapse.collapsing.in li.back .caret,
+  .swipe-menu.navbar-collapse.in.collapsing li.back .caret,
+  .swipe-menu.navbar-collapse.collapsing.collapsing li.back .caret {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid;
+    margin-right: 10px;
+    margin-left: -8px;
+    float: left;
+  }
+  .swipe-menu.navbar-collapse.in.in .dropdown > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover > ul.dropdown-submenu {
+    display: none;
+  }
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible {
+    display: block;
+  }
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu {
+    display: none;
+  }
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-menu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-menu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.in .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.in.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible,
+  .swipe-menu.navbar-collapse.collapsing.collapsing .dropdown-submenu:hover ul.dropdown-submenu.visible > ul.dropdown-submenu.visible {
+    display: block;
+  }
+  .swipe-menu.navbar-collapse.in.in,
+  .swipe-menu.navbar-collapse.collapsing.in {
+    overflow-y: visible;
+  }
+}

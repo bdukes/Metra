@@ -1,0 +1,112 @@
+//--------------------  Headings & Text -------------------- 
+    h1, h2, h3, h4, h5, h6, dt, th, .Head, .SubHead, .SubSubHead {color:#555;}
+    h1 {}
+    h2 {border:none;}
+    h3 {color:@primary-color;}
+    h4 {}
+    h5 {}
+    h6 {}
+
+    &.admin{
+        h1, h2, h3, h4, h5, h6, dt, th, .Head, .SubHead, .SubSubHead {color:#383838;}
+    }
+
+    .Head {border:none;}
+    .SubHead {}
+    .SubSubHead {}
+
+    .DnnModule-Console h3{}
+
+    .Normal, .NormalBold, .NormalDisabled, .NormalTextBox, .NormalRed, .CommandButton, .SkinObject, blockquote {color: #555;}
+    .NormalBold {}
+    .NormalDisabled {}
+
+    p{margin:0.692em 0;
+        &.secondary{color:@primary-color;}
+        &.tertiary{color:@primary-color; font-style:italic;}
+    }
+    
+    blockquote{border:none; padding:1.154em 1.154em 1.923em; display:inline-block; color:@primary-color;
+        small:before, &.pull-right small:after {content: " ";}
+        cite{padding:.5em 0;}
+        &.pull-right{border-right:3px solid @primary-color-lighter;}
+    }
+
+    mark{}
+
+//--------------------  Links & Images -------------------- 
+    a, a.SkinObject{color: @primary-color; text-decoration:none;}
+    a:hover, a:visited:hover, a.SkinObject:hover, a.SkinObject:visited:hover {cursor: pointer; }
+    a:visited, a.SkinObject:visited {text-decoration:none; color: @primary-color;}
+
+    a img {border: none; }
+
+    a[href^=tel] {color:inherit; text-decoration:none;}
+    
+    a.CommandButton:link {}
+    a.CommandButton:hover, a.CommandButton:visited:hover {text-decoration: underline; }
+    a.CommandButton:visited {}
+
+    .btn-primary,
+    .btn-primary:visited, 
+    .btn-secondary:visited,
+    .btn-info:visited, 
+    .btn-success:visited,
+    .btn-warning:visited, 
+    .btn-danger:visited,
+    .btn-inverse:visited,
+    .dnnPrimaryAction{color:#eee;}
+    a.dnnPrimaryAction, a:link.dnnPrimaryAction {color:#EFEFEF;}
+
+    .btn-primary{.linear-gradient(@primary-color-light, @primary-color); .contrast-color ('color', @primary-color, #000, #fff); color:#fff; border-color: @primary-color-dark;}
+    .btn-primary:hover{.linear-gradient(@primary-color, @primary-color-dark); }
+    .btn.btn-primary:hover, .btn.btn-primary:focus {background-position: 0 0;}
+
+    .btn-secondary{background:@secondary-color; padding:1.231em 1.923em; color:#fff;}
+    .btn-secondary:hover{background: #000;}
+    .btn.btn-secondary:hover, .btn.btn-secondary:focus {background-position: 0 0;}
+
+    .btn-tertiary, .btn-tertiary:hover{color:@primary-color;}
+
+//--------------------  Lists & Tables -------------------- 
+    dd {}
+
+    ul li {list-style:disc;}
+    ul ul li {list-style:circle;}
+
+    ol ol li {}
+
+    table { 
+        caption {}
+        thead {}
+        tbody {
+            tr {}
+            th, td {}
+            th {}
+            td {}
+        }
+    }
+
+    .dnnActions li, ul.dnnAdminTabNav li{list-style:none;} /*-- Fixes DNN Default override issue */
+
+    table.table{margin-bottom:1.923em; background: #fff;
+        caption{}
+        thead{background: @primary-color; color:#fff;
+            th{color:#fff; padding:0.615em;}
+        }
+        tbody{
+            tr{}
+            th, td{border-top: 1px solid #ddd; padding: 0.615em; color:#383838;}
+            th{padding:0.615em; border-top:0;}
+            td{padding:0.615em;}
+        }
+    }
+    
+    table.table-condensed{
+        thead{
+            th{padding:0.154em;}
+        }
+        tbody{
+            th, td{padding:0.154em;}
+        }
+    }

@@ -1,0 +1,102 @@
+.metra{
+//--------------------  Main Body Default Styles -------------------- 
+    .main-body{display:block; padding: 2em;
+        .contentpane{margin-bottom:30px;
+            &.DNNEmptyPane{margin-bottom:0;}
+        }    
+    }
+
+//--------------------  Main Body Media Query Styles --------------------
+    /*-- "Desktop or Larger" --*/
+    @media (min-width: 980px) {
+        
+    }
+
+    /*-- "Tabletish" --*/
+    @media (min-width: 768px) and (max-width: 979px) {
+        .main-body{
+            .main-body-wrap, .main-footer-wrap{padding-left:5%; padding-right:5%;}
+            .main-body-wrap{
+                .main-wrap{
+                    .twocol{
+                        .main{padding-right: 0;}
+                        .sidebar{padding-left:0;}
+                    }
+                }
+            }
+        }
+        &.interior{
+             .main-body{
+                .main-body-wrap{
+                    .interior-wrap{
+                        .left-wrap{padding-right:0;
+                            .main{padding-right:0;}
+                            .twocol{
+                                .col1{padding-right:0;}
+                                .col2{padding-left:0;} 
+                            }
+                        } 
+                        .sidebar{padding-left:0;}
+                    }
+                }
+            }
+        }
+    }
+
+    /*-- "Tabletish landscape" --*/
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+        .main-body{
+            .main-body-wrap, .main-footer-wrap{padding-left:5%; padding-right:5%;}
+            
+        }
+    }
+
+     /*-- "Smaller Tabletish" --*/
+    @media (max-width: 767px) {
+        .main-body{
+            .main-body-wrap, .main-footer-wrap{padding-left:5%; padding-right:5%;}
+            .main-body-wrap{
+                .main-wrap{
+                    .twocol{
+                        .main{padding-right: 0;}
+                        .sidebar{padding-left:0;}
+                    }
+                }
+            }
+            
+        }
+        &.interior{
+            .main-body{
+                .main-body-wrap{
+                    .main-wrap{}
+                    .left-wrap{padding-right:0;
+                        .main{padding-right:0;}
+                        .two-col{
+                            .col1{padding-right:0;}
+                            .col2{padding-leftt:0;}
+                        }
+                    }
+                    .sidebar{padding-left:0;}
+                }
+                
+            }    
+        }  
+              
+    }
+
+    /*-- "Inbetween Smaller Tabletish and Phoneish" --*/
+    @media (min-width: 481px) and (max-width: 640px) {
+        .main-body{
+            
+        }    
+    }
+
+    /*-- "Phoneish" --*/
+    @media (max-width: 480px) {
+        .main-body{
+            
+        }
+
+    }
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <template>Bootstrap.UL.cshtml</template>
+  <stylesheets>
+    <stylesheet>css/swipe-menu.css</stylesheet>
+    <!-- <stylesheet>css/swipe-menu.min.css</stylesheet> -->
+  </stylesheets>
+  <scripts>
+    <script jsObject="jQuery" />
+    <script jsObject="jsObjectToCheck">js/swipe-menu.js</script>
+    <!-- <script jsObject="jsObjectToCheck">js/swipe-menu.min.js</script> -->
+  </scripts>
+  <!--defaultTemplateArguments>
+    # Can't supply template arguments to razor templates (as of DDR 2.0.1)
+    <templateArgument name="CssClass" value="nav" />
+  </defaultTemplateArguments-->
+</manifest>
+

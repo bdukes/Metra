@@ -1,0 +1,63 @@
+//--------------------  Typography Styles -------------------- 
+body, html { font-family: @site-font; font-size:14px; line-height: 18px; font-weight: 400; background: #e8e8e8;}
+
+.metra{
+//--------------------  Headings & Text -------------------- 
+    h1, h2, h3, h4, h5, h6, dt, th, .Head, .SubHead, .SubSubHead {font-family:@site-font; letter-spacing: 0.01em; color:#111;}
+    h1 {font-size:2.308em;}
+    h2 {font-weight:400; font-size:2.308em;}
+    h3 {font-size:1.286em;}
+    h4 {font-size:1.385em; font-family:@site-font-sans; font-style:italic;}
+    h5 {font-size:1.077em; font-weight:bold; font-family:@site-font-sans; }
+    h6 {font-size:1.231em; font-family:@site-font-sans; font-style:italic;}
+
+    .Head {color:#111;}
+    .SubHead {font-weight:700; font-family: @site-font-sans;}
+    .SubSubHead {font-family: @site-font-sans;}
+
+    .DnnModule-Console h3{font-size:1em;}
+    .dnnFormSectionHead, .console-large h3{font-family: @site-font-sans; text-transform: none;}
+    
+
+    .Normal, .NormalBold, .NormalDisabled, .NormalTextBox, .NormalRed, .CommandButton, .SkinObject, blockquote {font-family: @site-font; font-size:13px; line-height:18px; font-weight: 300;}
+    .NormalBold {}
+    .NormalDisabled {}
+
+    blockquote{font-family:@site-font-sans; font-style: normal; color:#777; margin:0; padding:0 1em 1em;
+        footer{ font-style:italic; color:#777;
+            cite{
+                &:before{content:"—"; margin-right:.5em;}
+            }
+        }
+    }
+
+    .quote {
+        blockquote {}
+        figcaption {}
+        figcaption:before {}
+    }
+    .quote:before {font-size:6em;}
+    .quote:after {font-size:6em;}
+
+    table { 
+        caption {font-style: italic;}
+        thead {}
+        tbody {
+            tr {}
+            th, td {}
+            th {}
+            td {}
+        }
+    }
+
+    table.table{
+        caption{font-style:italic;}
+        thead{}
+        tbody{
+            tr{}
+            th, td{}
+            th{}
+            td{}
+        }
+    }
+}
