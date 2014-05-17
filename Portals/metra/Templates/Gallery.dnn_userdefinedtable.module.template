@@ -1,0 +1,399 @@
+<moduletemplate title="Gallery" description="" xmlns:ask="DotNetNuke/ModuleTemplate"><module>
+  <content>Form and List</content>
+  <contentKey />
+  <moduleID>486</moduleID>
+  <alignment />
+  <alltabs>false</alltabs>
+  <border />
+  <cachemethod />
+  <cachetime>0</cachetime>
+  <color />
+  <containersrc />
+  <displayprint>false</displayprint>
+  <displaysyndicate>false</displaysyndicate>
+  <displaytitle>true</displaytitle>
+  <enddate>0001-01-01T00:00:00</enddate>
+  <footer />
+  <header />
+  <iconfile />
+  <inheritviewpermissions>true</inheritviewpermissions>
+  <iswebslice>false</iswebslice>
+  <modulepermissions>
+    <permission>
+      <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+      <permissionkey>EDIT</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+    <permission>
+      <permissioncode>UDTEDIT</permissioncode>
+      <permissionkey>ROWEDIT</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+    <permission>
+      <permissioncode>UDTEDIT</permissioncode>
+      <permissionkey>ROWDELETE</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+    <permission>
+      <permissioncode>UDTEDIT</permissioncode>
+      <permissionkey>ROWADD</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+    <permission>
+      <permissioncode>UDTEDIT</permissioncode>
+      <permissionkey>COLUMNVISIBLE</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+    <permission>
+      <permissioncode>UDTEDIT</permissioncode>
+      <permissionkey>PRIVATECOLUMNS</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+    <permission>
+      <permissioncode>UDTEDIT</permissioncode>
+      <permissionkey>SHOWLIST</permissionkey>
+      <allowaccess>true</allowaccess>
+      <rolename>Administrators</rolename>
+    </permission>
+  </modulepermissions>
+  <title>Form and List</title>
+  <startdate>0001-01-01T00:00:00</startdate>
+  <uniqueId>20016c42-9b07-437e-b384-178cc6f52295</uniqueId>
+  <versionGuid>7bca98f9-9c25-4c43-99e0-e07904a9a9d2</versionGuid>
+  <visibility>Maximized</visibility>
+  <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+  <webslicettl>0</webslicettl>
+  <cultureCode />
+  <defaultLanguageGuid>00000000-0000-0000-0000-000000000000</defaultLanguageGuid>
+  <localizedVersionGuid>ee46422d-a8ec-48e2-be6c-01a9be924685</localizedVersionGuid>
+  <content type="DNNUserDefinedTable" version="06.01.00">
+    <UserDefinedTable xmlns="DotNetNuke/UserDefinedTable">
+      <Fields>
+        <UserDefinedFieldId>5</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Full Image</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>0</FieldOrder>
+        <FieldType>Image</FieldType>
+        <Visible>true</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Full_x0020_Image</ValueColumn>
+        <SortColumn>Full_x0020_Image</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>11</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Thumbnail</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>1</FieldOrder>
+        <FieldType>Image</FieldType>
+        <Visible>true</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Thumbnail</ValueColumn>
+        <SortColumn>Thumbnail</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>6</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Title</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>2</FieldOrder>
+        <FieldType>String</FieldType>
+        <Visible>true</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>true</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Title</ValueColumn>
+        <SortColumn>Title</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>7</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Size</FieldTitle>
+        <Required>false</Required>
+        <FieldOrder>3</FieldOrder>
+        <FieldType>String</FieldType>
+        <Visible>true</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Size</ValueColumn>
+        <SortColumn>Size</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>8</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Medium</FieldTitle>
+        <Required>false</Required>
+        <FieldOrder>4</FieldOrder>
+        <FieldType>String</FieldType>
+        <Visible>true</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Medium</ValueColumn>
+        <SortColumn>Medium</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>9</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Price</FieldTitle>
+        <Required>false</Required>
+        <FieldOrder>5</FieldOrder>
+        <FieldType>Currency</FieldType>
+        <Visible>true</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <OutputSettings>$</OutputSettings>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Price</ValueColumn>
+        <SortColumn>Price</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>10</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Sort Order</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>6</FieldOrder>
+        <FieldType>Int32</FieldType>
+        <default>5</default>
+        <Visible>false</Visible>
+        <ShowOnEdit>true</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Sort_x0020_Order</ValueColumn>
+        <SortColumn>Sort_x0020_Order</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>4</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Created by</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>7</FieldOrder>
+        <FieldType>CreatedBy</FieldType>
+        <Visible>false</Visible>
+        <ShowOnEdit>false</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Created_x0020_by</ValueColumn>
+        <SortColumn>Created_x0020_by</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>3</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Created at</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>8</FieldOrder>
+        <FieldType>CreatedAt</FieldType>
+        <Visible>false</Visible>
+        <ShowOnEdit>false</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Created_x0020_at</ValueColumn>
+        <SortColumn>Created_x0020_at</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>2</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Changed by</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>9</FieldOrder>
+        <FieldType>ChangedBy</FieldType>
+        <Visible>false</Visible>
+        <ShowOnEdit>false</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Changed_x0020_by</ValueColumn>
+        <SortColumn>Changed_x0020_by</SortColumn>
+      </Fields>
+      <Fields>
+        <UserDefinedFieldId>1</UserDefinedFieldId>
+        <ModuleID>486</ModuleID>
+        <FieldTitle>Changed at</FieldTitle>
+        <Required>true</Required>
+        <FieldOrder>10</FieldOrder>
+        <FieldType>ChangedAt</FieldType>
+        <Visible>false</Visible>
+        <ShowOnEdit>false</ShowOnEdit>
+        <Searchable>false</Searchable>
+        <PrivateField>false</PrivateField>
+        <MultipleValues>false</MultipleValues>
+        <NormalizeFlag>false</NormalizeFlag>
+        <ValueColumn>Changed_x0020_at</ValueColumn>
+        <SortColumn>Changed_x0020_at</SortColumn>
+      </Fields>
+      <FieldSettings>
+        <FieldId>5</FieldId>
+        <SettingName>AltCaption</SettingName>
+        <SettingValue>[row:Title]</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>5</FieldId>
+        <SettingName>AsLink</SettingName>
+        <SettingValue>False</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>5</FieldId>
+        <SettingName>Height</SettingName>
+        <SettingValue>-1</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>5</FieldId>
+        <SettingName>Width</SettingName>
+        <SettingValue>-1</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>11</FieldId>
+        <SettingName>AltCaption</SettingName>
+        <SettingValue>[row:Title]</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>11</FieldId>
+        <SettingName>AsLink</SettingName>
+        <SettingValue>False</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>11</FieldId>
+        <SettingName>Height</SettingName>
+        <SettingValue>-1</SettingValue>
+      </FieldSettings>
+      <FieldSettings>
+        <FieldId>11</FieldId>
+        <SettingName>Width</SettingName>
+        <SettingValue>-1</SettingValue>
+      </FieldSettings>
+      <Settings Setting="CalculatedColumnsRenderExpressionInForm" Value="True" />
+      <Settings Setting="UDT_ExcludeFromSearch" Value="True" />
+      <Settings Setting="UDT_TopCount" Value="" />
+      <Settings Setting="UseButtonsInForm" Value="True" />
+      <TabSettings Setting="UDT_Filter" Value="" />
+      <TabSettings Setting="UDT_ListNotFormsMode" Value="List" />
+      <TabSettings Setting="UDT_Paging" Value="" />
+      <TabSettings Setting="UDT_RenderingMethod" Value="XslUserDefinedStyleSheet" />
+      <TabSettings Setting="UDT_ShowNoRecordsUntilSearch" Value="False" />
+      <TabSettings Setting="UDT_ShowSearchTextBox" Value="False" />
+      <TabSettings Setting="UDT_SimpleSearch" Value="False" />
+      <TabSettings Setting="UDT_SortField" Value="10" />
+      <TabSettings Setting="UDT_SortOrder" Value="ASC" />
+      <TabSettings Setting="UDT_Submission_succeeded" Value="Your submission was successful." />
+      <TabSettings Setting="UDT_TokenTracking" Value="" />
+      <TabSettings Setting="UDT_TokenTrackingBCC" Value="" />
+      <TabSettings Setting="UDT_TokenTrackingCC" Value="" />
+      <TabSettings Setting="UDT_TokenTrackingFrom" Value="" />
+      <TabSettings Setting="UDT_TokenTrackingReplyTo" Value="" />
+      <TabSettings Setting="UDT_TopCount" Value="" />
+      <TabSettings Setting="UDT_TrackingMessage" Value="" />
+      <TabSettings Setting="UDT_TrackingSubject" Value="" />
+      <TabSettings Setting="UDT_TrackingTextOnDelete" Value="" />
+      <TabSettings Setting="UDT_TrackingTextOnNew" Value="" />
+      <TabSettings Setting="UDT_TrackingTextOnUpdate" Value="" />
+      <TabSettings Setting="UDT_TriggerOnDelete" Value="False" />
+      <TabSettings Setting="UDT_TriggerOnNew" Value="False" />
+      <TabSettings Setting="UDT_TriggerOnUpdate" Value="False" />
+      <TabSettings Setting="UDT_UponSubmitAction" Value="Form" />
+      <TabSettings Setting="UDT_UponSubmitRedirect" Value="" />
+      <TabSettings Setting="UDT_URLSearch" Value="False" />
+      <TabSettings Setting="UDT_XslTracking" Value="[AUTO]" />
+      <TabSettings Setting="UDT_XslUserDefinedStyleSheet" Value="XslStyleSheets/Gallery.xsl" />
+      <TabSettings Setting="UseButtonsInForm" Value="True" />
+      <XSL>
+        <Type>UDT_XslUserDefinedStyleSheet</Type>
+        <LocalFilePath>XslStyleSheets/Gallery.xsl</LocalFilePath>
+        <Stylesheet>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:udt="DotNetNuke/UserDefinedTable" exclude-result-prefixes="udt"&gt;
+  &lt;xsl:output method="xml" indent="yes" omit-xml-declaration="yes" /&gt;
+  &lt;!--
+  This prefix is used to generate module specific query strings
+  Each querystring or form value that starts with udt_{ModuleId}_param 
+  will be added as parameter starting with param
+  --&gt;
+  &lt;xsl:variable name="prefix_param"&gt;udt_&lt;xsl:value-of select="//udt:Context/udt:ModuleId" /&gt;_param&lt;/xsl:variable&gt;
+
+  &lt;xsl:template match="udt:Data" mode="list"&gt;
+    &lt;li itemscope="itemscope" itemtype="http://schema.org/Painting"&gt;
+      &lt;figure&gt;
+        &lt;a href="{udt:Full_x0020_Image_UDT_Url}"&gt;
+          &lt;img src="{udt:Thumbnail_UDT_Url}" itemprop="image" /&gt;
+        &lt;/a&gt;
+        &lt;figcaption&gt;
+          &lt;xsl:call-template name="EditLink" /&gt;
+          &lt;span class="title" itemprop="name"&gt;
+            &lt;xsl:value-of select="udt:Title" disable-output-escaping="yes" /&gt;
+          &lt;/span&gt;
+          &lt;xsl:if test="udt:Size"&gt;
+            &lt;span class="size"&gt;
+              &lt;xsl:value-of select="udt:Size" disable-output-escaping="yes" /&gt;
+            &lt;/span&gt;
+          &lt;/xsl:if&gt;
+          &lt;xsl:if test="udt:Medium"&gt;
+            &lt;span class="medium"&gt;
+              &lt;xsl:value-of select="udt:Medium" disable-output-escaping="yes" /&gt;
+            &lt;/span&gt;
+          &lt;/xsl:if&gt;
+          &lt;xsl:if test="udt:Price"&gt;
+            &lt;span class="price" itemprop="offer" itemscope="itemscope" itemtype="http://schema.org/Offer"&gt;
+              &lt;span itemprop="price"&gt;
+                $&lt;xsl:value-of select="udt:Price" disable-output-escaping="yes" /&gt;&lt;/span&gt;
+            &lt;/span&gt;
+          &lt;/xsl:if&gt;
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/li&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="/udt:UserDefinedTable"&gt;
+    &lt;xsl:variable name="currentData" select="udt:Data" /&gt;
+    &lt;xsl:if test="$currentData"&gt;
+      &lt;ul&gt;
+        &lt;xsl:apply-templates select="$currentData" mode="list"&gt;
+        &lt;/xsl:apply-templates&gt;
+      &lt;/ul&gt;
+    &lt;/xsl:if&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template name="EditLink"&gt;
+    &lt;xsl:if test="udt:EditLink"&gt;
+      &lt;a href="{udt:EditLink}"&gt;
+        &lt;img border="0" alt="edit" src="{//udt:Context/udt:ApplicationPath}/images/edit.gif" /&gt;
+      &lt;/a&gt;
+    &lt;/xsl:if&gt;
+  &lt;/xsl:template&gt;
+&lt;udt:template listType="ul" delimiter="" listView="&amp;lt;li itemscope=&amp;quot;itemscope&amp;quot; itemtype=&amp;quot;http://schema.org/Painting&amp;quot;&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;figure&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;a href=&amp;quot;[Image_UDT_Url]&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;[Image_UDT_Url]&amp;quot; itemprop=&amp;quot;image&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;figcaption&amp;gt;&amp;#xD;&amp;#xA;      [UDT:EditLink] &amp;#xD;&amp;#xA;      &amp;lt;span itemprop=&amp;quot;name&amp;quot;&amp;gt;[Title]&amp;lt;/span&amp;gt; &amp;#xD;&amp;#xA;      [Size]&amp;#xD;&amp;#xA;      [Medium]&amp;#xD;&amp;#xA;      &amp;lt;span itemprop=&amp;quot;offer&amp;quot; itemscope=&amp;quot;itemscope&amp;quot; itemtype=&amp;quot;http://schema.org/Offer&amp;quot;&amp;gt;&amp;#xD;&amp;#xA;        &amp;lt;span itemprop=&amp;quot;price&amp;quot;&amp;gt;[Price]&amp;lt;/span&amp;gt;&amp;#xD;&amp;#xA;      &amp;lt;/span&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;/figcaption&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/figure&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;/li&amp;gt;" headerView="" detailView="[UDT:ListView][UDT:EditLink]&amp;#xD;&amp;#xA;&amp;lt;table&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Image&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Image]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Title&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Title]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Size&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Size]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Medium&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Medium]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Price&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Price]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Sort Order&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Sort Order]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Created by&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Created by]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Created at&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Created at_UDT_Value]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Changed by&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Changed by]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;tr&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;normalBold&amp;quot;&amp;gt;Changed at&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;    &amp;lt;td class=&amp;quot;Normal&amp;quot;&amp;gt;[Changed at_UDT_Value]&amp;lt;/td&amp;gt;&amp;#xD;&amp;#xA;  &amp;lt;/tr&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;/table&amp;gt;" trackingEmail="" /&gt;
+&lt;/xsl:stylesheet&gt;</Stylesheet>
+      </XSL>
+    </UserDefinedTable>
+  </content>
+  <definition>DNN_UserDefinedTable</definition>
+  <moduledefinition>Form and List</moduledefinition>
+  <name>ContentPane</name>
+</module></moduletemplate>
